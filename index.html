@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Tetris</title>
+    </head>
+    
+    <body style="margin: 0px; overflow: hidden">
+        <header>
+            <h1>Tetris</h1>
+        </header>
+            
+        <section>
+            
+            <div class="tetris">
+                <canvas id="canvas"></canvas>
+            </div>
+            <aside>
+            <div class="score" id="score"></div> 
+            </aside>
+        </section>
+            
+        <footer>
+            <button class="control" onclick="play('music', this)">Play</button>
+
+            <span class="volume">
+                <a class="stick1" onclick="volume('music', 0)"></a>
+                <a class="stick2" onclick="volume('music', 0.1)"></a>
+                <a class="stick3" onclick="volume('music', 0.2)"></a>
+                <a class="stick4" onclick="volume('music', 0.5)"></a>
+                <a class="stick5" onclick="volume('music', 1)"></a>
+            </span>
+        </footer>
+        
+        <script src="js/main.js"> </script>
+        <script src="js/calcule.js"> </script>
+        <script src="js/dessin.js"> </script>
+        <script src="js/block.js"> </script>
+        <script src="js/music.js"> </script>
+        <audio src="tetris.mp3" id="music"   loop=""></audio>
+    </body>
+</html>
